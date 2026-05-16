@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Smart Lost & Found Management System</h1>
+
+        <form id="itemForm">
+            <input type="text" id="itemName" placeholder="Item Name" required>
+
+            <select id="itemType" required>
+                <option value="">Select Type</option>
+                <option value="Lost">Lost</option>
+                <option value="Found">Found</option>
+            </select>
+
+            <input type="text" id="location" placeholder="Location" required>
+
+            <input type="text" id="contact" placeholder="Contact Number" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Reported Items</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Type</th>
+                    <th>Location</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+
+            <tbody id="itemList"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
